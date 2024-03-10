@@ -2,7 +2,7 @@
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex items-center justify-center h-md">
       hi
     </div>
   );
