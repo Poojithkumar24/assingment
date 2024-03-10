@@ -1,11 +1,7 @@
-
-
-function App() {
+export default function App() {
   return (
-    <div className="flex items-center justify-center h-md">
-      hi
-    </div>
-  );
+    <h1 className="h-screen flex items-center justify-center">
+      Hello world!
+    </h1>
+  )
 }
-
-export default App;
