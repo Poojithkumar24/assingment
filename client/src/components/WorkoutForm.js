@@ -35,29 +35,34 @@ const WorkoutForm = () => {
     }
     
     return ( 
-        <form onSubmit={handleSubmit}>
-            <h3>Add a new Workout</h3>
-            <label>Excersice Title</label>
+        <div className='h-screen flex items-center justify-center'>
+            <form onSubmit={handleSubmit} className='relative shadow-lg  text-center'>
+            <h3 className=''>Add a new Workout</h3>
+            <label className='text-2xl font-semibold bg-black text-white'>Excersice Title</label>
             <input 
+                className='bg-gray-100 text-black'
                 type="text"
                 onChange={(e)=>setTitle(e.target.value)}
                 value={title}
             />
-            <label>Load (in Kg)</label>
+            <label className='text-2xl font-semibold  bg-black text-white'>Load (in Kg)</label>
             <input 
+                className='bg-gray-100 text-black'
                 type="number"
                 onChange={(e)=>setLoad(e.target.value)}
                 value={load}
             />
-            <label>Reps</label>
-            <input 
+            <label className='text-2xl font-semibold  bg-black text-white'>Reps</label>
+            <input
+                className='bg-gray-100 text-black' 
                 type="number"
                 onChange={(e)=>setReps(e.target.value)}
                 value={reps}
             />
 
             <button>ADD</button>
-        </form>
+            </form>
+        </div>
      )
 }
  
