@@ -5,7 +5,7 @@ import WorkoutForm from "./components/WorkoutForm";
 function App() {
   return (
     <div>
-      <WorkoutForm />
+      <Home />
     </div>
   );
 }

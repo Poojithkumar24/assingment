@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import WorkoutDetails from "../components/WorkoutDetails";
+import WorkoutForm from "../components/WorkoutForm";
 
 const Home = () => {
     const [workouts, setWorkouts] = useState(null);
@@ -24,12 +25,15 @@ const Home = () => {
     }, []);
 
     return ( 
-        <div className="grid grid-cols-1 gap-100">
+        <div>
+            
+            <div className="grid grid-cols-1 gap-100">
             <div className="">
                 {workouts !== null && workouts.map((workout) => (
                     <WorkoutDetails key={workout._id} workout={workout}/>
                 ))}
             </div>
+        </div>
         </div>
     );
 };
