@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <h1 className="h-screen flex items-center justify-center text-7xl text-cyan-500">
-      Hello
-    </h1>
+    <div>
+      <Home />
+    </div>
   );
 }
 
