@@ -25,16 +25,17 @@ const Home = () => {
     }, []);
 
     return ( 
-        <div>
             
-            <div className="grid grid-cols-1 gap-100">
+           <div className='mt-20'>
+             <div className="grid grid-cols-1 gap-100 pt-20 max-w-screen-sm mx-auto px-4 py-8">
             <div className="">
                 {workouts !== null && workouts.map((workout) => (
-                    <WorkoutDetails key={workout._id} workout={workout}/>
+                    <WorkoutDetails  key={workout._id} workout={workout}/>
                 ))}
             </div>
         </div>
-        </div>
+           </div>
+
     );
 };
  

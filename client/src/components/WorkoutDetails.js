@@ -1,6 +1,6 @@
 const WorkoutDetails = ({workout}) => {
     return ( 
-        <div className="relative shadow-lg m-5  text-center">
+        <div className="relative shadow-xl m-3  text-center ">
             <h4 className="text-2xl">{workout.title}</h4>
             <p><strong>Load (kg):</strong>{workout.load}</p>
             <p><strong>Reps: </strong>{workout.reps}</p>
